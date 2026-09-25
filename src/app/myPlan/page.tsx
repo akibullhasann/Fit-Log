@@ -4,7 +4,7 @@ import React from 'react';
 
 const MyPlan = () => {
     return (
-        <div className='bg-gray-950 py-7'>
+        <div className='bg-gray-950 py-7 w-[90%] mx-auto'>
             <div className='bg-gray-950 container mx-auto'>
                 <div className="space-y-2">
                     <h1 className="text-3xl font-bold uppercase tracking-tight text-white">MY PLAN</h1>

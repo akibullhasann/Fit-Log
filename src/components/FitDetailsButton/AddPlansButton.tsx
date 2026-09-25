@@ -26,7 +26,7 @@ const AddPlansButton = ({ fit }: IaddPlansButton) => {
         }
     }
     return (
-        <div>
+        
             <button
                 onClick={() => handleAddPlans()}
                 className="bg-lime-400 text-black px-5 py-2 rounded-full font-medium cursor-pointer
@@ -34,7 +34,7 @@ const AddPlansButton = ({ fit }: IaddPlansButton) => {
                 ">
                 Add to today's plan
             </button>
-        </div>
+        
     );
 };
 

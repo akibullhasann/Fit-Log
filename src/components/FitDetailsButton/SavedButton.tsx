@@ -26,7 +26,7 @@ const SavedButton = ({ fit }: IsavedButton) => {
         }
     }
     return (
-        <div>
+        
             <button
                 onClick={() => handleAddPlans()}
                 className=" text-white border border-white px-5 py-2 rounded-full font-medium cursor-pointer shadow-gray-800 active:translate-y-0.5
@@ -34,7 +34,7 @@ const SavedButton = ({ fit }: IsavedButton) => {
                 ">
                 Save for later
             </button>
-        </div>
+        
     );
 };
 

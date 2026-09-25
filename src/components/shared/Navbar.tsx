@@ -1,14 +1,14 @@
 
 import Image from 'next/image';
 import logo from "@/assets/logo.png";
-import Link from 'next/link';
 import LinkFiles from '../clientComponents/LinkFiles';
 import Hamburger from '../clientComponents/Hamburger';
 import PlanSavedCount from './PlanSavedCount';
+import LinkFilesLG from './../clientComponents/LInkFilesLG';
 
 const Navbar = () => {
     return (
-        <nav className='bg-[#0F1115] text-white'>
+        <nav className='bg-[#0F1115] text-white sticky top-0 z-50'>
             <div className='container mx-auto grid items-center grid-cols-2 px-6 sm:px-0 py-5
             sm:grid-cols-3 
             '>
@@ -27,7 +27,7 @@ const Navbar = () => {
 
                 {/* for laptop */}
                 <div className='hidden sm:flex gap-8 justify-self-center'>
-                    <LinkFiles></LinkFiles>
+                    <LinkFilesLG></LinkFilesLG>
                 </div>
 
                 <div className='justify-self-end flex gap-3'>

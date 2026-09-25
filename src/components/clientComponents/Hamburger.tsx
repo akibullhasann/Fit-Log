@@ -21,7 +21,7 @@ const Hamburger = () => {
             ><GiHamburgerMenu />
             </button>
             {isOpen && (
-                <LinkFiles></LinkFiles>
+                <LinkFiles isOpen={isOpen} setIsOpen={setIsOpen}></LinkFiles>
             )}
         </div>
     );

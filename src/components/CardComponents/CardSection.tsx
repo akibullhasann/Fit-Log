@@ -18,7 +18,7 @@ const CardSection = async () => {
     const fitData = await getFitData();
 
     return (
-        <section className=''>
+        <section className='mb-8'>
             <div className='text-white container mx-auto w-[90%] space-y-5'>
                 <div className='space-y-3'>
                     <h1 className={`text-3xl tracking-tight ${oswald.className}`}>THE LIBRARY</h1>

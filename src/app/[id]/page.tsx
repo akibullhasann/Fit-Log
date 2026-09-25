@@ -156,7 +156,7 @@ const SingleDataPage = async ({params}:IpageProps) => {
                     </ol>
 
                     {/* BUTTONS */}
-                    <div className="flex gap-3 mt-7">
+                    <div className="flex flex-col justify-stretch items-stretch gap-3 mt-7 sm:flex-row ">
 
                         <AddPlansButton fit={fit}></AddPlansButton>
 

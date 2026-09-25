@@ -3,18 +3,12 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import React, { Dispatch, SetStateAction } from 'react';
 
-interface IlinkFiles {
-    isOpen: boolean,
-    setIsOpen: Dispatch<SetStateAction<boolean>>
-}
 
-const LinkFiles = ({isOpen, setIsOpen}:IlinkFiles) => {
+
+
+const LinkFilesLG = () => {
      const pathname = usePathname();
-      const handleLink = () => {
-        setIsOpen(false);
-    }
      
      
     return (
@@ -22,14 +16,12 @@ const LinkFiles = ({isOpen, setIsOpen}:IlinkFiles) => {
         flex flex-col absolute bg-gray-900 p-6 top-9 left-0 gap-2
         sm:flex-row sm:gap-8 justify-self-center sm:static sm:bg-transparent sm:p-0'>
             <Link href="/"
-            onClick={() => handleLink()}
             className={`rounded-lg px-4 py-2 ${
                 pathname === "/" ? "text-[#C2F800]" : "bg-transparent"
             }`}
             >Workouts</Link>
 
             <Link href="/myPlan"
-            onClick={() => handleLink()}
             className={`rounded-lg px-4 py-2 ${
             pathname === "/myPlan" ? "text-[#C2F800]" : "bg-transparent"
             }`}
@@ -38,4 +30,4 @@ const LinkFiles = ({isOpen, setIsOpen}:IlinkFiles) => {
     );
 };
 
-export default LinkFiles;
+export default LinkFilesLG;
