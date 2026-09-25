@@ -15,8 +15,8 @@ const Card = ({ fit }: Icard) => {
 
 
     return (
-        
-            <Link
+
+        <Link
             href={`/${fit.id}`}
             className="block w-full max-w-[540px]"
         >

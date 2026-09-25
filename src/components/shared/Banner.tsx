@@ -4,7 +4,7 @@ import BannerPng from '@/assets/banner.png'
 import { Oswald } from "next/font/google";
 import { Inter } from "next/font/google";
 
-const oswald = Oswald({
+export const oswald = Oswald({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });

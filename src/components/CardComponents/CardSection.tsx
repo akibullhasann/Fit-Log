@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from './Card';
 import { Iworkout } from '@/Types/types';
+import { oswald } from '../shared/Banner';
 
 const getFitData = async () => {
     try {
@@ -18,9 +19,9 @@ const CardSection = async () => {
 
     return (
         <section className=''>
-            <div className='text-white container mx-auto w-[90%]'>
-                <div>
-                    <h1>THE LIBRARY</h1>
+            <div className='text-white container mx-auto w-[90%] space-y-5'>
+                <div className='space-y-3'>
+                    <h1 className={`text-3xl tracking-tight ${oswald.className}`}>THE LIBRARY</h1>
                     <p>Twelve lifts covering every major muscle group.</p>
                 </div>
                 <div className=' grid grid-cols-1 items-center justify-items-center
