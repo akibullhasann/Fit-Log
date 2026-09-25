@@ -10,6 +10,7 @@ export default function Home() {
       <div className={` bg-gray-950`}>
         <Banner></Banner>
         <CardSection></CardSection>
+        
       </div>
   );
 }

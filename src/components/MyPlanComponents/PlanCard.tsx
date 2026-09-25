@@ -36,7 +36,7 @@ const PlanCard = ({fit,tab}:IplanCard) => {
         }
     }
     return (
-        <div className="w-full flex items-center gap-4 rounded-2xl border border-[#292D35] bg-[#1A1D22] p-4">
+        <div className="w-full flex items-center gap-4 rounded-2xl border border-[#292D35] bg-[#1A1D22] p-4 text-white">
 
             {/* image */}
             <div className="relative h-24 w-24 flex-shrink-0 rounded-xl overflow-hidden">
@@ -76,7 +76,7 @@ const PlanCard = ({fit,tab}:IplanCard) => {
             <div className="flex items-center gap-3">
                 <Link
                     href={`/${fit.id}`}
-                    className="px-4 py-2 rounded-full border border-[#292D35] text-sm"
+                    className="px-4 py-2 rounded-full outline outline-white bg-gray-900 text-sm hover:outline-none active:translate-y-0.5"
                 >
                     View Details
                 </Link>

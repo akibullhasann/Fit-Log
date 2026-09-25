@@ -4,6 +4,7 @@ import logo from "@/assets/logo.png";
 import Link from 'next/link';
 import LinkFiles from '../clientComponents/LinkFiles';
 import Hamburger from '../clientComponents/Hamburger';
+import PlanSavedCount from './PlanSavedCount';
 
 const Navbar = () => {
     return (
@@ -30,8 +31,7 @@ const Navbar = () => {
                 </div>
 
                 <div className='justify-self-end flex gap-3'>
-                    <Link href="/myPlan">Plan <span>0</span></Link>
-                    <Link href="/myPlan">Saved <span>0</span></Link>
+                    <PlanSavedCount></PlanSavedCount>
                 </div>
             </div>
         </nav>

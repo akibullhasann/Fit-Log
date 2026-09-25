@@ -1,4 +1,5 @@
 import AddPlansButton from "@/components/FitDetailsButton/AddPlansButton";
+import SavedButton from "@/components/FitDetailsButton/SavedButton";
 import { Iworkout } from "@/Types/types";
 import Image from "next/image";
 
@@ -159,9 +160,7 @@ const SingleDataPage = async ({params}:IpageProps) => {
 
                         <AddPlansButton fit={fit}></AddPlansButton>
 
-                        <button className="border border-gray-500 px-5 py-2 rounded-full">
-                            Save for later
-                        </button>
+                        <SavedButton fit={fit}></SavedButton>
 
                     </div>
 
