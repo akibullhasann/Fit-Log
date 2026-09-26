@@ -58,7 +58,7 @@ const PlansTab = () => {
                     <select 
                     value={sortBy}
                     onChange={(e)=>setSortBy(e.target.value as "duration"|"calories"|"rating")}
-                     defaultValue="Pick a Runtime"
+                     
                     className="bg-[#1A1D22] text-white border border-[#292D35] rounded-lg px-4 py-2">
                         <option disabled={true}>Sort By</option>
                         <option value={"duration"}>Duration</option>

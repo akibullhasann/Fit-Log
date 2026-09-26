@@ -24,7 +24,7 @@ const CardSection = async () => {
                     <h1 className={`text-3xl tracking-tight ${oswald.className}`}>THE LIBRARY</h1>
                     <p>Twelve lifts covering every major muscle group.</p>
                 </div>
-                <div className=' grid grid-cols-1 items-center justify-items-center
+                <div id='workout' className=' grid grid-cols-1 items-center justify-items-center
                 md:grid-cols-3 gap-6
                 '>
                     {fitData.map((fit: Iworkout, ind: number) => {

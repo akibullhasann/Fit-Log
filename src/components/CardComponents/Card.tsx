@@ -18,7 +18,7 @@ const Card = ({ fit }: Icard) => {
 
         <Link
             href={`/${fit.id}`}
-            className="block w-full max-w-[540px]"
+            className="block w-full max-w-[540px] border border-transparent rounded-3xl hover:border-green-600"
         >
             <div className="w-full overflow-hidden rounded-3xl border border-[#292D35] bg-[#1A1D22] space-y-4">
 
@@ -57,7 +57,7 @@ const Card = ({ fit }: Icard) => {
                         {fit.equipment}
                     </p>
 
-                    <div className="flex gap-7">
+                    <div className="flex gap-7 pb-5">
                         <div className="flex items-center gap-1">
                             <CiClock2 className="text-[#C2F800] font-bold" />
                             <span>{fit.duration}</span>

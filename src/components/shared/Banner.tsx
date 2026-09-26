@@ -3,6 +3,8 @@ import Image from 'next/image';
 import BannerPng from '@/assets/banner.png'
 import { Oswald } from "next/font/google";
 import { Inter } from "next/font/google";
+import Link from 'next/link';
+import BrowseButton from '../clientComponents/BrowseButton';
 
 export const oswald = Oswald({
   subsets: ["latin"],
@@ -22,7 +24,7 @@ const Banner = () => {
                     <p className='text-[#C2F800]'>WORKOUT LIBRARY</p>
                     <h1 className={` ${oswald.className} text-5xl sm:text-5xl uppercase leading-16`}>Train with intent. Log every set.</h1>
                     <p className={`${inter.className} tracking-widest`}>FitLog is a dark, no-nonsense gym companion: pick a lift, lock it into today's plan, and watch the week's work add up.</p>
-                    <button className='bg-[#C2F800] text-black px-4 py-2 rounded-lg' >Browse Workouts</button>
+                    <BrowseButton></BrowseButton>
                 </div>
                 <div>
                     <Image src={BannerPng} alt='banner image' width={800}></Image>

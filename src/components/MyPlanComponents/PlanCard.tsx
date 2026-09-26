@@ -10,6 +10,7 @@ import { CiClock2, CiStar } from 'react-icons/ci';
 import { IoMdCheckmark } from 'react-icons/io';
 import { IoClose } from 'react-icons/io5';
 import { LuFlame } from 'react-icons/lu';
+import { toast } from 'react-toastify';
 
 
 
@@ -26,6 +27,7 @@ const PlanCard = ({ fit, tab }: IplanCard) => {
 
     const markAsDone = () => {
         setAddPlans((prev) => prev.filter((w) => w.id !== fit.id));
+        toast.success('Mark as it done')
     }
 
     const handleRemove = () => {
